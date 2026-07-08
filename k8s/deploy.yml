@@ -6,7 +6,7 @@ metadata:
   labels:
     app: bonos-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: bonos-service
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: bonos
-          image: 802983641807.dkr.ecr.us-east-1.amazonaws.com/bonos/service:latest
+          image: 088950558880.dkr.ecr.us-east-1.amazonaws.com/casino/bonos:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8004
