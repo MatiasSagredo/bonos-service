@@ -55,7 +55,7 @@ spec:
                   key: JWT_SECRET
           readinessProbe:
             httpGet:
-              path: /readyz
+              path: /api/bonos/readyz
               port: 8004
             initialDelaySeconds: 5
             periodSeconds: 10
@@ -63,7 +63,7 @@ spec:
             failureThreshold: 3
           livenessProbe:
             httpGet:
-              path: /livez
+              path: /api/bonos/livez
               port: 8004
             initialDelaySeconds: 10
             periodSeconds: 15
